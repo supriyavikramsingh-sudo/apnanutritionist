@@ -1,46 +1,22 @@
 ---
-summary: "Workspace template for TOOLS.md"
-read_when:
-  - Bootstrapping a workspace manually
+summary: "Tool configuration for ApnaNutritionist"
 ---
 
-# TOOLS.md - Local Notes
+# TOOLS.md — ApnaNutritionist Tool Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## gog (Google Workspace CLI)
+- Binary: ~/.local/bin/gog (v0.9.0)
+- Account: supriyavikramsingh@gmail.com
+- Permissions: Google Drive + Google Sheets
+- Use for: creating user sheets, sharing with 
+  readers, appending meal log rows
 
-## What Goes Here
+## Telegram
+- Bot: @apnanutritionist_bot
+- dmPolicy: open
+- allowFrom: ["*"]
+- Session scope: per-channel-peer
 
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+## Models
+- Photo meal logging: openai/gpt-5
+- Everything else: openai/gpt-5-mini
