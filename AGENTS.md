@@ -43,10 +43,10 @@ URL: [url]"
 
 Parse the sheetId and URL from this output.
 
-STEP 2 — Add headers:
-~/.local/bin/gog sheets update [sheetId] "Sheet1!A1:P1" "Date" "Timestamp (IST)" "Meal Name" "Meal Type" "Input Type" "Ingredients/Keywords" "Calories" "Protein (g)" "Carbs (g)" "Fat (g)" "Fibre (g)" "% Daily Calories Met" "% Protein Met" "% Carbs Met" "% Fat Met" "% Fibre Met"
+STEP 2 — Add headers (pipe-separated, single quotes around range):
+~/.local/bin/gog sheets update [sheetId] 'Sheet1!A1:P1' "Date|Timestamp (IST)|Meal Name|Meal Type|Input Type|Ingredients/Keywords|Calories|Protein (g)|Carbs (g)|Fat (g)|Fibre (g)|% Daily Calories Met|% Protein Met|% Carbs Met|% Fat Met|% Fibre Met"
 
-STEP 3 — Share with user as reader:
+STEP 3 — Share with the user as a reader:
 ~/.local/bin/gog drive share [sheetId] --email=[userEmail] --role=reader --force --no-input
 
 STEP 4 — Save to tracking.json:
@@ -178,4 +178,4 @@ Would you like me to track your meals in a personal Google Sheet? I'll create on
 If Yes → ask for email → immediately run GOOGLE SHEETS CREATION steps above
 If No → confirm targets saved, move to meal logging
 
-NEVER skip this step. NEVER proceed to meal logging without showing targets first.root@ccdb1ce9e5d2:~# 
+NEVER skip this step. NEVER proceed to meal logging without showing targets first.
